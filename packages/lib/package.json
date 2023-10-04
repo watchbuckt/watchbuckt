@@ -1,0 +1,21 @@
+{
+  "name": "lib",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.22",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "zod": "^3.0.0",
+    "react": "^18.2.0",
+    "react-native": "^0.70.3"
+  }
+}
