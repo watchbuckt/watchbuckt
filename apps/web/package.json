@@ -6,9 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "db:push": "drizzle-kit push:mysql",
-    "db:introspect": "drizzle-kit introspect:mysql",
-    "db:studio": "drizzle-kit studio --port 5000 --verbose",
     "lint": "next lint"
   },
   "dependencies": {
@@ -25,6 +22,8 @@
     "react-native-web": "^0.18.12",
     "sonner": "^1.0.3",
     "ui": "workspace:*",
+    "api": "workspace:*",
+    "db": "workspace:*",
     "zod": "^3.22.3"
   },
   "devDependencies": {
@@ -34,6 +33,7 @@
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.16",
     "babel-plugin-react-native-web": "^0.18.12",
+    "better-sqlite3": "^8.7.0",
     "drizzle-kit": "^0.19.13",
     "eslint": "^8.49.0",
     "postcss": "^8.4.31",

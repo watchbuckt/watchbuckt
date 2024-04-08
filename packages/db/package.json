@@ -1,16 +1,19 @@
 {
-  "name": "lib",
+  "name": "db",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "db:push": "drizzle-kit push:sqlite",
+    "db:gen": "drizzle-kit generate:sqlite",
+    "db:introspect": "drizzle-kit introspect:turso",
+    "db:studio": "drizzle-kit studio --port 5000 --verbose"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.11",
     "tsconfig": "workspace:*",
     "typescript": "^4.7.4"
   },
