@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from 'ui';
+import { Button } from 'watchbuckt/ui';
 
 export default function Web() {
   return (

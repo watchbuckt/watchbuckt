@@ -15,8 +15,8 @@
     "expo": "~49.0.13",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
-    "react-native": "0.72.5",
-    "ui": "workspace:*"
+    "react-native": "0.72.10",
+    "watchbuckt-ui": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

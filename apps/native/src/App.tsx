@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { FlatList } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button } from 'ui';
+import { Button } from 'watchbuckt-ui';
 
 type Foo = {
   name: string;

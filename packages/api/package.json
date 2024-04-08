@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "watchbuckt-api",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,7 +14,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "db": "workspace:*",
+    "watchbuckt-db": "workspace:*",
     "zod": "^3.0.0"
   }
 }

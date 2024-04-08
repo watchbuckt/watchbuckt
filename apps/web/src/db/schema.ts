@@ -1,1 +1,3 @@
-import  *  from "db/schema"
+import  db  from "watchbuckt/db";
+
+

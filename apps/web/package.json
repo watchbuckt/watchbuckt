@@ -21,10 +21,10 @@
     "react-dom": "^18.2.0",
     "react-native-web": "^0.18.12",
     "sonner": "^1.0.3",
-    "ui": "workspace:*",
-    "api": "workspace:*",
-    "db": "workspace:*",
-    "zod": "^3.22.3"
+    "zod": "^3.22.3",
+    "watchbuckt-ui": "workspace:*",
+    "watchbuckt-api": "workspace:*",
+    "watchbuckt-db": "workspace:*"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
