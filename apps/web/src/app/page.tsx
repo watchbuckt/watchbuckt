@@ -1,12 +1,17 @@
 'use client';
 
-import { Button } from 'watchbuckt/ui';
+import { Button } from '@core-app/components';
 
 export default function Web() {
   return (
     <div className="">
       <h1>Web</h1>
-      <Button onClick={() => console.log('Pressed!')} text="Boop" />
+      <Button
+        title="a button"
+        onPress={() => {
+          console.log('hi');
+        }}
+      />
     </div>
   );
 }

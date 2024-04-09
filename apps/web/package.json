@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@expo/next-adapter": "^6.0.0",
     "@t3-oss/env-nextjs": "^0.6.1",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native-web": "^0.18.12",
-    "zod": "^3.22.3",
-    "watchbuckt-ui": "workspace:*",
-    "watchbuckt-api": "workspace:*"
+    "core-app": "workspace:*",
+    "zod": "^3.22.3"
   },
   "devDependencies": {
     "@types/node": "^18.17.15",
@@ -26,7 +26,6 @@
     "better-sqlite3": "^8.7.0",
     "eslint": "^8.49.0",
     "prettier": "^3.0.3",
-    "tsconfig": "workspace:*",
     "typescript": "^4.9.5"
   },
   "pnpm": {

@@ -1,5 +1,8 @@
-module.exports = {
+const { withExpo } = require('@expo/next-adapter');
+
+module.exports = withExpo({
   reactStrictMode: true,
+  transpilePackages: ['react-native', 'expo'],
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
@@ -15,4 +18,4 @@ module.exports = {
     ];
     return config;
   },
-};
+});

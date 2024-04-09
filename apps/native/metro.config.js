@@ -1,11 +1,8 @@
-// Learn more https://docs.expo.dev/guides/monorepos
 const { getDefaultConfig } = require('expo/metro-config');
 const { FileStore } = require('metro-cache');
 const path = require('node:path');
 
-// Find the project and workspace directories
 const projectRoot = __dirname;
-// This can be replaced with `find-yarn-workspace-root`
 const workspaceRoot = path.resolve(projectRoot, '../..');
 
 const config = getDefaultConfig(projectRoot);
@@ -19,6 +16,8 @@ config.resolver.nodeModulesPaths = [
 ];
 // #3 - Force resolving nested modules to the folders below
 config.resolver.disableHierarchicalLookup = true;
+
+config.resolver.blockList = /\.next/;
 
 // Use turborepo to restore the cache when possible
 config.cacheStores = [

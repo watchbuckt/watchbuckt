@@ -1,4 +1,6 @@
-module.exports = {
-  presets: ['next/babel'],
-  plugins: [['react-native-web']],
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+  };
 };

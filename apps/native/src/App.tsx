@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { FlatList } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button } from 'watchbuckt-ui';
+import { Button } from 'core-app/components';
 
 type Foo = {
   name: string;
@@ -42,7 +42,7 @@ console.log(foo);
 export default function App() {
   return (
     <View style={styles.container}>
-      <Button text="hi" />
+      <Button title="a button" onPress={() => console.log('hi')} />
       <StatusBar style="auto" />
       <FlatList
         data={foo}
