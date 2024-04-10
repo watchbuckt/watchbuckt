@@ -1,1 +1,2 @@
-export { Button } from './primitives/Button';
+export { Button} from './primitives/Button.js';
+export { Foo } from './primitives/Foo';

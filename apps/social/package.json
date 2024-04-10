@@ -1,6 +1,6 @@
 {
-  "name": "core-api",
-  "version": "0.0.0",
+  "name": "social-api",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -13,6 +13,7 @@
     "db:studio": "drizzle-kit studio --port 5000 --verbose"
   },
   "dependencies": {
+    "core-lib": "workspace:*",
     "@libsql/client": "^0.6.0",
     "drizzle-orm": "^0.30.7",
     "hono": "^4.2.2",
