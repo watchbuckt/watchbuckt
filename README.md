@@ -1,9 +1,14 @@
 # Watchbuckt
 
+A Monorepo using `Turbo` and `PNPM` for the whole watchbuckt platform.
+
 ## Apps and Packages
 
-- `native`: a [react-native](https://reactnative.dev/) app built with [expo](https://docs.expo.dev/)
-- `web`: a [Next.js](https://nextjs.org/) app built with [react-native-web](https://necolas.github.io/react-native-web/)
-- `api`: built with [Hono](https://nextjs.org/) and [Drizzle](https://www.prisma.io/) ORM.
-- `ui`: a stub [react-native](https://reactnative.dev/) component library shared by both `web` and `native` applications
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `native`: [React Native](https://reactnative.dev/) app built with [Expo](https://docs.expo.dev/)
+- `web`: [Remix](https://remix.run/) app built with [react-native-web](https://necolas.github.io/react-native-web/)
+- `core-app`: a shared package containing a component library a shared logic.
+
+- `social`: An API built with [Hono](https://hono.dev/) and SQLite ([Turso](https://turso.tech/)) with the [Drizzle](https://www.prisma.io/) ORM.
+- `media`: An API built with [Fastify](https://fastify.dev/) and MongoDB (using Mongoose).
+
+- `core-lib`: a shared pacckage for type definitions and validations.
